@@ -56,15 +56,17 @@ function App() {
           <option value={15}>15 itens</option>
           <option value={20}> 20 itens</option>
         </select>
+
+        
         {currentItems.map((item) => {
           return (
             <div className="item">
-              <span>{item.id}</span>
+              <span>{item.id} - </span>
               <span>{item.title}</span>
-              <span>{item.completed}</span>
             </div>
           );
         })}
+        <div>{endIndex} de {items.length} itens</div>
       </div>
     </div>
   );

@@ -1,8 +1,22 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin:0 auto;
+  width: 500px;
+
+}
+
 .item{
   width: 500px;
   padding: 1em;
   margin: 1em;
   border:  1px solid #000;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.item span{
+  margin-right: 15px;
 }
